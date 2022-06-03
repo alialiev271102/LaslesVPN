@@ -1,3 +1,18 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+button {
+  cursor: pointer; }
+
 .header {
   display: flex;
   padding: 50px 0;
@@ -24,9 +39,13 @@
     .header__title-bold {
       font-weight: 700; }
   .header__signIn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
     background: none;
     border: none;
-    padding-right: 30px; }
+    padding-right: 30px;
+    color: #0B132A; }
   .header__signUp {
     border: 2px solid #F53838;
     width: 150px;
@@ -55,19 +74,53 @@
   font-size: 16px;
   line-height: 45px; }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: 'Rubik', sans-serif; }
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto; }
-
-button {
-  cursor: pointer; }
+.main-block {
+  display: flex;
+  padding: 70px 0;
+  justify-content: space-between; }
+  .main-block__info {
+    flex-basis: 50%; }
+  .main-block__title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    color: #0B132A;
+    margin: 0 0 30px; }
+    .main-block__title-span {
+      font-weight: 700; }
+  .main-block__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+    margin: 0 0 55px; }
+    .main-block__text-span {
+      font-weight: 500; }
+  .main-block__btn {
+    background: none;
+    border: none;
+    width: 250px;
+    height: 60px;
+    background: #F53838;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF; }
+    .main-block__btn-block {
+      position: relative; }
+    .main-block__btn:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 25px;
+      left: 19px;
+      background: rgba(245, 56, 56, 0.35);
+      filter: blur(21px);
+      border-radius: 10px;
+      width: 211.83px;
+      height: 60px; }
+  .main-block__pic {
+    max-width: 570px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,60 @@
+@import "mixins";
+
+.main-block {
+  display: flex;
+  padding: 70px 0;
+  justify-content: space-between;
+
+  &__info {
+    flex-basis: 50%;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    color: #0B132A;
+    margin: 0 0 30px;
+
+    &-span {
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+    margin: 0 0 55px;
+
+    &-span {
+      font-weight: 500;
+    }
+  }
+
+  &__btn {
+    @include big-btn(250px, 60px);
+
+    &-block {
+      position: relative;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 25px;
+      left: 19px;
+      background: rgba(245, 56, 56, 0.35);
+      filter: blur(21px);
+      border-radius: 10px;
+      width: 211.83px;
+      height: 60px;
+    }
+  }
+
+  &__pic {
+    max-width: 570px;
+  }
+}

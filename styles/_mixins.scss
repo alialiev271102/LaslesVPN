@@ -1,5 +1,6 @@
 @mixin big-btn ($width: 100px, $height: 50px) {
   background: none;
+  border: none;
   width: $width;
   height: $height;
   background: #F53838;

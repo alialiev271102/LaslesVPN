@@ -37,9 +37,13 @@
   }
 
   &__signIn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
     background: none;
     border: none;
     padding-right: 30px;
+    color: #0B132A;
   }
 
   &__signUp {

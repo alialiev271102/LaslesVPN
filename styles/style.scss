@@ -1,5 +1,3 @@
-@import "header";
-
 *,
 *:before,
 *:after{
@@ -17,4 +15,7 @@
 button {
   cursor: pointer;
 }
+
+@import "header";
+@import "main-block";
 

@@ -1,0 +1,29 @@
+@mixin big-btn ($width: 100px, $height: 50px) {
+  background: none;
+  width: $width;
+  height: $height;
+  background: #F53838;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+@mixin min-btn ($width: 100px, $height: 50px) {
+  border: 2px solid #F53838;
+  width: $width;
+  height: $height;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F53838;
+  background: none;
+
+  &:hover {
+    background: #F53838;
+    border-radius: 50px;
+    color: #FFFFFF;
+  }
+}

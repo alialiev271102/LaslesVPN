@@ -1,0 +1,69 @@
+@import  'mixins';
+
+.header {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+
+  &__icon {
+    width: 35px;
+    height: 36px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+
+    &-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #0B132A;
+      height: 36px;
+      position: relative;
+    }
+
+    &-middle {
+      display: inline-block;
+      padding-left: 45px;
+    }
+
+    &-bold {
+      font-weight: 700;
+    }
+  }
+
+  &__signIn{
+    background: none;
+    border: none;
+    padding-right: 30px;
+  }
+
+  &__signUp {
+    @include min-btn(150px, 45px);
+  }
+}
+
+.nav{
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+  }
+
+  &__item {
+    margin: 0 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #4F5665;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 45px;
+  }
+}
+

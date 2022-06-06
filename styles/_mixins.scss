@@ -32,3 +32,34 @@
     color: #FFFFFF;
   }
 }
+
+@mixin titles () {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
+}
+
+@mixin text() {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
+
+@mixin list () {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+  margin-top: 25px;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../images/features-block/checkMark.png') no-repeat;
+    margin-bottom: -6px;
+  }
+}

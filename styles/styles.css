@@ -149,7 +149,7 @@ button {
 
 .info-block {
   margin-top: 30px;
-  margin-bottom: 150px;
+  margin-bottom: 95px;
   min-height: 200px;
   display: flex;
   border-radius: 10px;
@@ -195,6 +195,45 @@ button {
   font-size: 20px;
   line-height: 30px;
   color: #4F5665;
+}
+
+.features-block {
+  display: flex;
+  justify-content: space-between;
+}
+.features-block__info {
+  max-width: 430px;
+}
+.features-block__info h2 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
+  padding: 0 0 25px 0;
+}
+.features-block__info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
+.features-block__info ul {
+  list-style: none;
+}
+.features-block__info li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+  margin-top: 25px;
+}
+.features-block__info li:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../images/features-block/checkMark.png") no-repeat;
+  margin-bottom: -6px;
 }
 
 /*# sourceMappingURL=styles.css.map */

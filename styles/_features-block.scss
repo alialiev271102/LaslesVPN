@@ -1,0 +1,27 @@
+@import "mixins";
+
+.features-block {
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    max-width: 430px;
+    & h2 {
+      @include titles();
+      padding: 0 0 25px 0;
+    }
+
+    & p {
+      @include text();
+    }
+
+    & ul {
+      list-style: none;
+    }
+
+    & li {
+      @include list();
+
+    }
+  }
+}

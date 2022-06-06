@@ -1,4 +1,4 @@
-@mixin big-btn ($width: 100px, $height: 50px) {
+@mixin big-btn($width: 100px, $height: 50px) {
   background: none;
   border: none;
   width: $width;
@@ -13,9 +13,15 @@
   &:hover {
     text-decoration: underline;
   }
+
+  &:active {
+    background: #FFFFFF;
+    color: #F53838;
+    box-shadow: inset 0 0 10px rgba(245, 56, 56, 0.35);
+  }
 }
 
-@mixin min-btn ($width: 100px, $height: 50px) {
+@mixin min-btn($width: 100px, $height: 50px) {
   border: 2px solid #F53838;
   width: $width;
   height: $height;
@@ -30,10 +36,17 @@
     background: #F53838;
     border-radius: 50px;
     color: #FFFFFF;
+    box-shadow: 0 17px 54px rgba(245, 56, 56, 0.35);
+  }
+
+  &:active {
+    background: #FFFFFF;
+    color: #F53838;
+    box-shadow: inset 0 0 10px rgba(245, 56, 56, 0.35);
   }
 }
 
-@mixin titles () {
+@mixin titles() {
   font-weight: 500;
   font-size: 35px;
   line-height: 50px;
@@ -47,19 +60,20 @@
   color: #4F5665;
 }
 
-@mixin list () {
+@mixin list($image: '../images/features-block/checkMark.png', $width: 24px, $height: 24px, $mb: -6px, $mr:12px, $mt: 25px) {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: #4F5665;
-  margin-top: 25px;
+  margin-top: $mt;
 
   &:before {
     content: "";
     display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url('../images/features-block/checkMark.png') no-repeat;
-    margin-bottom: -6px;
+    width: $width;
+    height: $height;
+    background: url($image) no-repeat;
+    margin-bottom: $mb;
+    margin-right: $mr;
   }
 }

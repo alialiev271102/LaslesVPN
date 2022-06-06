@@ -74,6 +74,12 @@ button {
   background: #F53838;
   border-radius: 50px;
   color: #FFFFFF;
+  box-shadow: 0 17px 54px rgba(245, 56, 56, 0.35);
+}
+.header__signUp:active {
+  background: #FFFFFF;
+  color: #F53838;
+  box-shadow: inset 0 0 10px rgba(245, 56, 56, 0.35);
 }
 
 .nav__list {
@@ -140,6 +146,11 @@ button {
 .main-block__btn:hover {
   text-decoration: underline;
 }
+.main-block__btn:active {
+  background: #FFFFFF;
+  color: #F53838;
+  box-shadow: inset 0 0 10px rgba(245, 56, 56, 0.35);
+}
 .main-block__btn-block {
   position: relative;
 }
@@ -200,6 +211,7 @@ button {
 .features-block {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 120px;
 }
 .features-block__info {
   max-width: 430px;
@@ -234,6 +246,114 @@ button {
   height: 24px;
   background: url("../images/features-block/checkMark.png") no-repeat;
   margin-bottom: -6px;
+  margin-right: 12px;
+}
+
+.pricing-block {
+  background: #F6F6F6;
+  padding-top: 80px;
+}
+.pricing-block__title {
+  text-align: center;
+}
+.pricing-block__title h2 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
+}
+.pricing-block__title p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+  display: block;
+  width: 555px;
+  margin: 20px auto 60px;
+}
+.pricing-block__boxs {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing-block__box {
+  display: flex;
+  flex-direction: column;
+  min-height: 760px;
+  max-width: 330px;
+  padding: 80px 68px 50px;
+  background: #FFFFFF;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+}
+.pricing-block__box img {
+  display: block;
+  margin: 0 auto;
+}
+.pricing-block__box h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #0B132A;
+  margin-bottom: 30px;
+}
+.pricing-block__box p {
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #0B132A;
+}
+.pricing-block__box p span {
+  font-weight: 400;
+  color: #4F5665;
+}
+.pricing-block__box ul {
+  list-style: none;
+}
+.pricing-block__box li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+  margin-top: 10px;
+}
+.pricing-block__box li:before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background: url("../images/pricing-block/checkMark.png") no-repeat;
+  margin-bottom: -2px;
+  margin-right: 25px;
+}
+.pricing-block__box button {
+  margin-top: 20px;
+  border: 2px solid #F53838;
+  width: 178px;
+  height: 45px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F53838;
+  background: none;
+}
+.pricing-block__box button:hover {
+  background: #F53838;
+  border-radius: 50px;
+  color: #FFFFFF;
+  box-shadow: 0 17px 54px rgba(245, 56, 56, 0.35);
+}
+.pricing-block__box button:active {
+  background: #FFFFFF;
+  color: #F53838;
+  box-shadow: inset 0 0 10px rgba(245, 56, 56, 0.35);
+}
+.pricing-block__box:hover, .pricing-block__box:active, .pricing-block__box:focus {
+  border: 2px solid #F53838;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

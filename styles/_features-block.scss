@@ -3,6 +3,7 @@
 .features-block {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 120px;
 
   &__info {
     max-width: 430px;
@@ -20,7 +21,7 @@
     }
 
     & li {
-      @include list();
+      @include list('../images/features-block/checkMark.png');
 
     }
   }

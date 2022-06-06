@@ -1,0 +1,86 @@
+@import "mixins";
+
+.pricing-block {
+  background: #F6F6F6;
+  padding-top: 80px;
+
+  &__title {
+    text-align: center;
+
+    & h2 {
+      @include titles();
+    }
+
+    & p {
+      @include text();
+      display: block;
+      width: 555px;
+      margin: 20px auto 60px;
+    }
+  }
+
+  &__boxs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    min-height: 760px;
+    max-width: 330px;
+    padding: 80px 68px 50px;
+    background: #FFFFFF;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+
+    & img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    & h3 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      color: #0B132A;
+      margin-bottom: 30px;
+    }
+
+    & p {
+      margin-top: auto;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      color: #0B132A;
+
+      & span {
+        font-weight: 400;
+        color: #4F5665;
+      }
+    }
+
+    & ul {
+      list-style: none;
+    }
+
+    & li {
+      @include list('../images/pricing-block/checkMark.png', 13px, 9px, -2px, 25px, 10px);
+    }
+
+    & button {
+      margin-top: 20px;
+      @include min-btn(178px, 45px);
+    }
+
+    &:hover,
+    &:active,
+    &:focus{
+      border: 2px solid #F53838;
+      border-radius: 10px;
+    }
+
+  }
+}

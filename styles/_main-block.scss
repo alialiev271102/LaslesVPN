@@ -35,22 +35,10 @@
 
   &__btn {
     @include big-btn(250px, 60px);
+    box-shadow: 0 25px 54px rgba(245, 56, 56, 0.35);
 
     &-block {
       position: relative;
-    }
-
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 25px;
-      left: 19px;
-      background: rgba(245, 56, 56, 0.35);
-      filter: blur(21px);
-      border-radius: 10px;
-      width: 211.83px;
-      height: 60px;
     }
   }
 

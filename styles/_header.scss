@@ -44,6 +44,10 @@
     border: none;
     padding-right: 30px;
     color: #0B132A;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__signUp {
@@ -68,6 +72,11 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 45px;
+
+    &:hover {
+      color: #000;
+      font-weight: 700;
+    }
   }
 }
 

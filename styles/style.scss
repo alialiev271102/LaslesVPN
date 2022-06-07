@@ -17,7 +17,7 @@ button {
 }
 
 .grey-block {
-  background: #F6F6F6;
+  background: linear-gradient(#F6F6F6, #FFFFFF);
 }
 
 @import "header";
@@ -26,4 +26,5 @@ button {
 @import "features-block";
 @import "price";
 @import "vpn";
+@import "comments";
 

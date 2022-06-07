@@ -16,6 +16,10 @@ button {
   cursor: pointer;
 }
 
+.grey-block {
+  background: #F6F6F6;
+}
+
 .header {
   display: flex;
   padding: 50px 0;
@@ -250,7 +254,6 @@ button {
 }
 
 .pricing-block {
-  background: #F6F6F6;
   padding-top: 80px;
 }
 .pricing-block__title {
@@ -354,6 +357,34 @@ button {
 .pricing-block__box:hover, .pricing-block__box:active, .pricing-block__box:focus {
   border: 2px solid #F53838;
   border-radius: 10px;
+}
+
+.vpn-block {
+  padding-top: 150px;
+  text-align: center;
+}
+.vpn-block__title h2 {
+  display: inline-block;
+  max-width: 384px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
+}
+.vpn-block__title p {
+  display: block;
+  margin: 20px auto 150px;
+  max-width: 555px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
+.vpn-block__sub {
+  margin: 80px 0 125px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=styles.css.map */

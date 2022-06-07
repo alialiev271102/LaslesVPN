@@ -16,9 +16,14 @@ button {
   cursor: pointer;
 }
 
+.grey-block {
+  background: #F6F6F6;
+}
+
 @import "header";
 @import "main-block";
 @import "info-block";
 @import "features-block";
 @import "price";
+@import "vpn";
 

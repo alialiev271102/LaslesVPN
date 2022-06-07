@@ -1,0 +1,27 @@
+@import "mixins";
+
+.vpn-block {
+  padding-top: 150px;
+  text-align: center;
+  &__title {
+    & h2 {
+      display: inline-block;
+      max-width: 384px;
+      @include titles();
+    }
+
+    & p {
+      display: block;
+      margin: 20px auto 150px;
+      max-width: 555px;
+      @include text();
+    }
+  }
+
+  &__sub {
+    margin: 80px 0 125px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

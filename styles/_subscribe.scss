@@ -1,0 +1,35 @@
+@import "mixins";
+
+.subscribe-block {
+  min-height: 233px;
+  padding: 58px 70px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  background: #FFFFFF;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 33px 114px rgba(0,0,0,0.06);
+
+  &__first {
+
+    & h2 {
+      display: block;
+      @include titles();
+      max-width: 372px;
+    }
+
+    & p {
+      display: block;
+      @include text();
+    }
+  }
+
+  &__second {
+    display: flex;
+    & button {
+      @include big-btn();
+      margin: auto 0;
+    }
+  }
+}

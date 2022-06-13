@@ -55,6 +55,50 @@
   }
 }
 
+
+.main-nav {
+  overflow: hidden;
+  transition: height 2s;
+}
+
+.nav-btn {
+  display: none;
+  position: relative;
+  width: 42px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-btn span,
+.nav-btn span::before,
+.nav-btn span::after {
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background: #000000;
+}
+
+.nav-btn span {
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  transform: translate(-50%);
+}
+
+.nav-btn span::before {
+  content: "";
+  top: -7px;
+  left: 0;
+}
+
+.nav-btn span::after {
+  content: "";
+  top: 7px;
+  left: 0;
+}
+
 .nav{
   &__list {
     display: flex;

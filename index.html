@@ -19,26 +19,29 @@
             <span class="header__title-middle">Lasles<span class="header__title-bold">VPN</span></span>
         </a>
     </h3>
-    <nav class="header__nav">
-        <ul class="nav__list">
-            <li class="nav__item">
-                <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-                <a href="#features" class="nav__link">Features</a>
-            </li>
-            <li class="nav__item">
-                <a href="#price" class="nav__link">Pricing</a>
-            </li>
-            <li class="nav__item">
-                <a href="#testimonials" class="nav__link">Testimonials</a>
-            </li>
-            <li class="nav__item">
-                <a href="#help" class="nav__link">Help</a>
-            </li>
+    <div class="nav-wrapper">
+        <button type="button" id="navBtn" class="nav-btn"><span></span></button>
+        <nav class="header__nav main-nav nav-hidden" id="mainNav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#features" class="nav__link">Features</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#price" class="nav__link">Pricing</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#testimonials" class="nav__link">Testimonials</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#help" class="nav__link">Help</a>
+                </li>
 
-        </ul>
-    </nav>
+            </ul>
+        </nav>
+    </div>
     <div class="header__authentication">
         <button class="header__signIn">Sign In</button>
         <button class="header__signUp">Sign Up</button>
@@ -310,6 +313,5 @@
 </footer>
 
 <script src="js/nav.js"></script>
-<script src="js/spiner.js"></script>
 </body>
 </html>

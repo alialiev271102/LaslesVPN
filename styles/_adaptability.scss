@@ -154,3 +154,78 @@
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+  .main-block {
+    &__title {
+      font-size: 34px;
+      line-height: 42px;
+    }
+  }
+
+  .info-block {
+    &__box {
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+      &__pic, &__text {
+        margin: 10px auto;
+      }
+  }
+
+  .pricing-block {
+    &__title p{
+      width: 100%;
+    }
+
+    &__boxs {
+      flex-wrap: wrap;
+    }
+
+    &__box {
+      margin: 10px auto;
+    }
+  }
+
+  .vpn-block {
+    &__title h2{
+      font-size: 28px;
+    }
+  }
+
+  .coments-block {
+    &__title h2 {
+      font-size: 28px;
+    }
+
+    &__spiner-box {
+      max-width: 300px;
+      max-height: 400px;
+    }
+  }
+
+  .subscribe-block {
+    width: 300px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px 10px;
+
+    &__second {
+      margin: 0 auto;
+    }
+  }
+
+  .footer {
+    &__inner {
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+
+    &__box {
+      flex-basis: 40%;
+    }
+  }
+
+}

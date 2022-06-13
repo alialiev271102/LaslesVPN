@@ -795,5 +795,54 @@ button {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 320px) {
+  .main-block__title {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .info-block__box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .info-block__pic, .info-block__text {
+    margin: 10px auto;
+  }
+  .pricing-block__title p {
+    width: 100%;
+  }
+  .pricing-block__boxs {
+    flex-wrap: wrap;
+  }
+  .pricing-block__box {
+    margin: 10px auto;
+  }
+  .vpn-block__title h2 {
+    font-size: 28px;
+  }
+  .coments-block__title h2 {
+    font-size: 28px;
+  }
+  .coments-block__spiner-box {
+    max-width: 300px;
+    max-height: 400px;
+  }
+  .subscribe-block {
+    width: 300px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .subscribe-block__second {
+    margin: 0 auto;
+  }
+  .footer__inner {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  .footer__box {
+    flex-basis: 40%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

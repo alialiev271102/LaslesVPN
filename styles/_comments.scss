@@ -20,9 +20,19 @@
   }
 
   &__spiner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 400px;
+    overflow: hidden;
+
+    &-line {
+      max-height: 230px;
+      width: 1200px;
+      display: flex;
+      position: relative;
+      left: 0;
+      transition: all ease 1s;
+    }
+
     &-box {
       max-width: 400px;
       max-height: 230px;
@@ -96,6 +106,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
+    max-width: 600px;
   }
 
   &__circles {

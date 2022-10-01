@@ -99,34 +99,60 @@ button {
   background: transparent;
   border: none;
   cursor: pointer;
+  margin-left: 10px;
 }
 
-.nav-btn span,
-.nav-btn span::before,
-.nav-btn span::after {
+.first-line,
+.second-line,
+.third-line,
+.forth-line {
   position: absolute;
   width: 22px;
   height: 2px;
   background: #000000;
-}
-
-.nav-btn span {
-  top: 50%;
-  left: 50%;
+  left: 0;
   display: inline-block;
-  transform: translate(-50%);
 }
 
-.nav-btn span::before {
-  content: "";
-  top: -7px;
-  left: 0;
+.first-line {
+  top: 8px;
 }
 
-.nav-btn span::after {
-  content: "";
-  top: 7px;
-  left: 0;
+.nav-btn .second-line {
+  top: 16px;
+  transition: 3s;
+}
+
+.nav-btn .third-line {
+  top: 16px;
+  transition: 3s;
+}
+
+.forth-line {
+  top: 24px;
+}
+
+.nav-btn-active {
+  position: relative;
+  width: 42px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.nav-btn-active .first-line, .nav-btn-active .forth-line {
+  opacity: 0;
+}
+.nav-btn-active .second-line {
+  top: 16px;
+  transform: rotate(45deg);
+  transition: 3s;
+}
+.nav-btn-active .third-line {
+  top: 16px;
+  transform: rotate(-45deg);
+  transition: 3s;
 }
 
 .nav__list {
@@ -541,27 +567,23 @@ button {
   background: #DDE0E4;
   border-radius: 50%;
   margin-right: 15px;
+  cursor: pointer;
 }
 .coments-block .circle-active {
-  width: 45px;
-  height: 15px;
   background: #F53838;
-  border-radius: 7px;
-  margin-right: 15px;
 }
 .coments-block .red_arrow {
-  width: 60px;
-  height: 60px;
   background: transparent;
   border: 2px solid #F53838;
-  border-radius: 50%;
 }
 .coments-block .white_arrow {
-  width: 60px;
-  height: 60px;
   background: #F53838;
   border: 2px solid #F53838;
   box-shadow: 0 14px 44px rgba(14, 20, 34, 0.08);
+}
+.coments-block .white_arrow, .coments-block .red_arrow {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
 }
 
@@ -700,6 +722,9 @@ button {
 }
 
 @media screen and (max-width: 1080px) {
+  body {
+    padding: 0 15px;
+  }
   .vpn-block__pic img {
     width: 100%;
   }
@@ -718,7 +743,7 @@ button {
     font-size: 13px;
   }
 }
-@media screen and (max-width: 895px) {
+@media screen and (max-width: 925px) {
   .header .header__title {
     display: none;
   }
@@ -752,6 +777,11 @@ button {
     cursor: pointer;
     background: #000;
   }
+  .nav__link {
+    color: #FFFFFF;
+  }
+}
+@media screen and (max-width: 895px) {
   .main-block__title {
     font-size: 30px;
     line-height: 32px;
@@ -850,10 +880,22 @@ button {
     padding: 15px;
   }
 }
+@media screen and (max-width: 425px) {
+  .coments-block__spiner-box {
+    max-width: 271px;
+    padding: 5px;
+  }
+  .coments-block__spiner-box p {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 370px) {
   .main-block__title {
     font-size: 34px;
     line-height: 42px;
+  }
+  .features-block__info h2 {
+    text-align: center;
   }
   .pricing-block__title p {
     width: 100%;
@@ -870,8 +912,13 @@ button {
   .coments-block__title h2 {
     font-size: 28px;
   }
-  .coments-block__spiner-box {
-    padding: 0;
+  .coments-block__spiner {
+    padding: 0 5px;
+  }
+  .coments-block .red_arrow,
+.coments-block .white_arrow {
+    width: 40px;
+    height: 40px;
   }
   .subscribe-block {
     width: 300px;
@@ -881,6 +928,11 @@ button {
   }
   .subscribe-block__second {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 335px) {
+  body {
+    padding: 0;
   }
 }
 

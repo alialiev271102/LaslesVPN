@@ -1,13 +1,17 @@
 function navToggle() {
     let navBtn = document.getElementById('navBtn');
     let mainNav = document.getElementById('mainNav');
-    let heightNav = 265;
+    let heightNav = 250;
     navBtn.onclick = function () {
         if (mainNav.classList.contains('nav-hidden')) {
             mainNav.classList.remove('nav-hidden');
+            navBtn.classList.remove("nav-btn");
+            navBtn.classList.add("nav-btn-active");
             mainNav.style.height = heightNav + 'px';
         } else {
             mainNav.classList.add('nav-hidden');
+            navBtn.classList.remove("nav-btn-active");
+            navBtn.classList.add("nav-btn");
             mainNav.style.height = 0;
         }
     }

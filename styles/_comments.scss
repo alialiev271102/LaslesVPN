@@ -120,30 +120,27 @@
     background: #DDE0E4;
     border-radius: 50%;
     margin-right: 15px;
+    cursor: pointer;
 
     &-active {
-      width: 45px;
-      height: 15px;
       background: #F53838;
-      border-radius: 7px;
-      margin-right: 15px;
     }
   }
 
   .red_arrow {
-    width: 60px;
-    height: 60px;
     background: transparent;
     border: 2px solid #F53838;
-    border-radius: 50%;
   }
 
   .white_arrow {
-    width: 60px;
-    height: 60px;
     background: #F53838;
     border: 2px solid #F53838;
     box-shadow: 0 14px 44px rgba(14, 20, 34, 0.08);
+  }
+
+  .white_arrow, .red_arrow {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
   }
 }

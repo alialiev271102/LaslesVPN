@@ -20,7 +20,12 @@
         </a>
     </h3>
     <div class="nav-wrapper">
-        <button type="button" id="navBtn" class="nav-btn"><span></span></button>
+        <button type="button" id="navBtn" class="nav-btn">
+            <span class="first-line"></span>
+            <span class="second-line"></span>
+            <span class="third-line"></span>
+            <span class="forth-line"></span>
+        </button>
         <nav class="header__nav main-nav nav-hidden" id="mainNav">
             <ul class="nav__list">
                 <li class="nav__item">
@@ -241,10 +246,9 @@
         </div>
         <div class="coments-block__arrows container">
             <div class="coments-block__circles">
-                <div class="circle circle-active"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
+                <div class="circle" id="0"></div>
+                <div class="circle" id="1"></div>
+                <div class="circle" id="2"></div>
             </div>
             <div>
                 <button class="red_arrow prev"><img src="images/comment-block/red_arrow.png" alt="Red Arrow"></button>

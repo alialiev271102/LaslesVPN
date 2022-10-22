@@ -222,25 +222,17 @@
     }
   }
 
-  .coments-block {
-    &__spiner {
-
-    }
-    &__spiner-box {
-      padding: 15px;
-    }
-  }
-
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 435px) {
   .coments-block {
 
     &__spiner-box {
-      max-width: 271px;
+      width: calc(100vw - 30px);
       padding: 5px;
 
       & p {
+        word-wrap: break-word;
         font-size: 12px;
       }
     }
@@ -286,10 +278,6 @@
       font-size: 28px;
     }
 
-    &__spiner {
-      padding: 0 5px;
-    }
-
     .red_arrow,
     .white_arrow{
       width: 40px;
@@ -311,8 +299,15 @@
   }
 }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 330px){
   body {
     padding: 0;
   }
+
+  .coments-block {
+    &__spiner {
+      padding: 0 5px;
+    }
+  }
 }
+
